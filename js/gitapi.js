@@ -9,29 +9,23 @@ async function getData(){
 
     card5.appendChild(name)
 
-    const repo=await fetch('https://api.github.com/users/selmanfariz18')
-    const data1=await repo.json()
-    console.log(data1)
+    
     const card =document.getElementById('stat2')
     const repo_name =document.createElement('h3')
-    repo_name.textContent= data1.public_repos
+    repo_name.textContent= data.public_repos
     card.appendChild(repo_name)
 
-    const folo=await fetch('https://api.github.com/users/selmanfariz18')
-    const data2=await folo.json()
-
+    
     const card2 =document.getElementById('stat3')
     const folo_name =document.createElement('h3')
-    folo_name.textContent= data2.followers
+    folo_name.textContent= data.followers
 
     card2.appendChild(folo_name)
 
-    const folow=await fetch('https://api.github.com/users/selmanfariz18')
-    const data3=await folow.json()
-
+    
     const card3 =document.getElementById('stat4')
     const folow_name =document.createElement('h3')
-    folow_name.textContent= data3.following
+    folow_name.textContent= data.following
 
     card3.appendChild(folow_name)
 
