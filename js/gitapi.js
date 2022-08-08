@@ -11,20 +11,20 @@ async function getData(){
 
     
     const card =document.getElementById('stat2')
-    const repo_name =document.createElement('h3')
+    const repo_name =document.createElement('p')
     repo_name.textContent= data.public_repos
     card.appendChild(repo_name)
 
     
     const card2 =document.getElementById('stat3')
-    const folo_name =document.createElement('h3')
+    const folo_name =document.createElement('p')
     folo_name.textContent= data.followers
 
     card2.appendChild(folo_name)
 
     
     const card3 =document.getElementById('stat4')
-    const folow_name =document.createElement('h3')
+    const folow_name =document.createElement('p')
     folow_name.textContent= data.following
 
     card3.appendChild(folow_name)
@@ -33,7 +33,7 @@ async function getData(){
     const data4=await org.json()
 
     const card4 =document.getElementById('stat5')
-    const org_name =document.createElement('h3')
+    const org_name =document.createElement('p')
     org_name.textContent= data4.length
 
     card4.appendChild(org_name)
